@@ -1,0 +1,130 @@
+body {
+  width: auto;
+  height: 100px;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/Death\ Star\ image.png);
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-self: center;
+  width: 3px;
+}
+
+img {
+  width: 550px;
+  cursor: pointer;
+}
+
+#images {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 350px;
+}
+
+.img1 {
+  width: 150px;
+  cursor: pointer;
+}
+
+th {
+  color: yellow;
+  font-size: larger;
+}
+
+td {
+  color: aliceblue;
+  font-size: large;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  background-color: yellow;
+  font-size: medium;
+  font-weight: 400;
+  border: 10px solid black;
+  border-radius: 5px solid black;
+  display: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+#StarWarsTable {
+  text-align: center;
+  width: 1400px;
+}
+
+#new_btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+#prevBtn {
+  visibility: hidden;
+}
+
+#nextBtn {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  #images {
+    margin: 60px 100px;
+  }
+
+  .img1 {
+    width: 100px;
+  }
+
+  #StarWarsTable {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #images {
+    margin: 60px 50px;
+    flex-wrap: wrap;
+  }
+
+  .img1 {
+    width: 80px;
+  }
+
+  #StarWarsTable {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  #new_btn {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #images {
+    margin: 30px 10px;
+  }
+  .img1 {
+    width: 80px;
+  }
+  #StarWarsTable {
+    margin: 30px 10px;
+  }
+}
